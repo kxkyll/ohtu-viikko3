@@ -1,3 +1,11 @@
+Tässä käyttökelpoisia GIT:n komentoja
+-------------------------------------------------------------
+git clone reponsshosoite
+git pull
+git add .
+git commit -m "viesti mitä muutettu"
+git push
+git status
 git branch eka  - luo eka nimisen branchin
 git checkout eka - vaihtaa eka nimisen branchin aktiiviseksi
 git branch  - kertoo mitä brancheja on ja näyttää mikä niistä on aktiivisena
