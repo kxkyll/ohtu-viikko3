@@ -1,4 +1,12 @@
-git branch eka  -luo eka nimisen branchin
+Tässä käyttökelpoisia GIT:n komentoja
+-------------------------------------------------------------
+git clone reponsshosoite
+git pull
+git add .
+git commit -m "viesti mitä muutettu"
+git push
+git status
+git branch eka  - luo eka nimisen branchin
 git checkout eka - vaihtaa eka nimisen branchin aktiiviseksi
 git branch  - kertoo mitä brancheja on ja näyttää mikä niistä on aktiivisena
 git branch -v - kertoo mitä on commitattu mihinkin branchiin
@@ -12,7 +20,7 @@ git checkout master
 git merge eka 
 3) voit poistaa mergetyn branchin (ei poista branchia jota ei ole mergetty)
 git branch -d eka 
-GIT:in tärkeitä komentoja
+Muita GIT:n käyttökelpoisia komentoja
 gitk
-mergetool
-ja lopuksi vielä joitain muutoksia
+git mergetool
+git stash
