@@ -1,0 +1,14 @@
+git branch eka  - luo eka nimisen branchin
+git checkout eka - vaihtaa eka nimisen branchin aktiiviseksi
+git branch  - kertoo mit‰ brancheja on ja n‰ytt‰‰ mik‰ niist‰ on aktiivisena
+git branch -v - kertoo mit‰ on commitattu mihinkin branchiin
+git push origin eka - pushaa branchiin eka commitatut muutokset remote branchiin nimelt‰ eka
+gitk --all  - n‰ytt‰‰ branchit ja niiden tilat
+
+merge‰minen
+1) vaihda ensin se branch aktiiviseksi mihin haluat branchin merget‰ (usein master)
+git checkout master
+2) merge‰ branch (alla mergett‰v‰n branchin nimi eka) 
+git merge eka 
+3) voit poistaa mergetyn branchin (ei poista branchia jota ei ole mergetty)
+git branch -d eka 
