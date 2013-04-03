@@ -23,4 +23,9 @@ git branch -d eka
 GIT:in t‰rkeit‰ komentoja
 gitk
 mergetool
+git remote show origin
+git checkout --track origin/haara1  -luodaan remote repon branchia haara1 trackkaava locaali branch nimelt‰ haara1
+git branch -D haara2  -> poistaa haara2 branchin vaikka merge‰ ei ole tehtyk‰‰n!!!
+git revert t‰h‰nhashinnumero -> poistaa hashinnumeron osoittaman pushauksen githubin reposta (vaatii ilmeisesti jonkin viestin muuten avaa vim:n josta muuten p‰‰see pois :q  tai write and quit :wq)
+
 lis‰t‰‰n viel‰ jotain loppuun
