@@ -1,7 +1,5 @@
 package ohtu.domain;
 
-import org.springframework.stereotype.Component;
-
 /**
  *
  * @author kxkyllon

@@ -15,6 +15,10 @@
     <bean id="inMemoryUserDao" class="ohtu.data_access.InMemoryUserDao"></bean>  
     <bean id="consoleIO" class="ohtu.io.ConsoleIO"></bean>  
     <bean id="authenticationService" class="ohtu.services.AuthenticationService"></bean>  
+    <!--<bean id="fileUserDao" class="ohtu.data_access.FileUserDao">
+        <constructor-arg type="java.lang.String" value="salasanat.txt"/>
+    </bean>-->  
+    
     
         
 </beans>
