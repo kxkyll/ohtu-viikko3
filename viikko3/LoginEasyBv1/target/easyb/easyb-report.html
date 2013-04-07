@@ -67,9 +67,9 @@
             <tbody>
               <tr class='primaryRow'>
                 <td>10</td>
+                <td class='stepResultFailed'>10</td>
                 <td class=''>0</td>
-                <td class=''>0</td>
-                <td>0.827</td>
+                <td>13.612</td>
               </tr>
             </tbody>
           </table>
@@ -88,9 +88,9 @@
               <tr class='primaryRow'>
                 <td>2</td>
                 <td>10</td>
+                <td class='stepResultFailed'>10</td>
                 <td class=''>0</td>
-                <td class=''>0</td>
-                <td>0.827</td>
+                <td>13.612</td>
               </tr>
             </tbody>
           </table>
@@ -137,9 +137,9 @@
          
         </td>
         <td>3</td>
+        <td class='stepResultFailed'>3</td>
         <td class=''>0</td>
-        <td class=''>0</td>
-        <td>0.627</td>
+        <td>13.452</td>
       </tr>
 
        
@@ -150,84 +150,345 @@
               
               <tr class='primaryScenarioRow'>
                 <td title='Scenario'>user can login with correct password</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.054</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.209</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command login selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />logging_in$_run_closure1_closure4.doCall(logging_in.story:12)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a valid username and password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: logging_in</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />logging_in$_run_closure1_closure5.doCall(logging_in.story:18)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then user will be logged in to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: logging_in</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />logging_in$_run_closure1_closure6.doCall(logging_in.story:22)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='secondaryScenarioRow'>
                 <td title='Scenario'>user can not login with incorrect password</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.009</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0050</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command login selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />logging_in$_run_closure2_closure7.doCall(logging_in.story:29)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a valid username and incorrect password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: logging_in</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />logging_in$_run_closure2_closure8.doCall(logging_in.story:34)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then user will not be logged in to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: logging_in</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />logging_in$_run_closure2_closure9.doCall(logging_in.story:37)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='primaryScenarioRow'>
                 <td title='Scenario'>nonexistent user can not login to </td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.005</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0030</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command login selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />logging_in$_run_closure3_closure10.doCall(logging_in.story:45)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a nonexistent username and some password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: logging_in</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />logging_in$_run_closure3_closure11.doCall(logging_in.story:50)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then user will not be logged in to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: logging_in</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />logging_in$_run_closure3_closure12.doCall(logging_in.story:53)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
@@ -245,9 +506,9 @@
          
         </td>
         <td>7</td>
+        <td class='stepResultFailed'>7</td>
         <td class=''>0</td>
-        <td class=''>0</td>
-        <td>0.2</td>
+        <td>0.16</td>
       </tr>
 
        
@@ -258,196 +519,805 @@
               
               <tr class='primaryScenarioRow'>
                 <td title='Scenario'>creation succesfull with correct username and password</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.004</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0080</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command new user is selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure1_closure8.doCall(new_user_creation.story:14)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a valid username and password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure1_closure9.doCall(new_user_creation.story:20)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then new user is registered to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure1_closure10.doCall(new_user_creation.story:24)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='secondaryScenarioRow'>
                 <td title='Scenario'>can login with succesfully generated account</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.004</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0020</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command new user is selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure2_closure11.doCall(new_user_creation.story:31)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a valid username and password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure2_closure12.doCall(new_user_creation.story:37)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then new credentials allow logging in to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure2_closure13.doCall(new_user_creation.story:41)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='primaryScenarioRow'>
                 <td title='Scenario'>creation fails with correct username and too short password</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.004</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0020</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command new user is selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure3_closure14.doCall(new_user_creation.story:48)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a valid username and too short password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure3_closure15.doCall(new_user_creation.story:53)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then new user is not be registered to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure3_closure16.doCall(new_user_creation.story:56)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='secondaryScenarioRow'>
                 <td title='Scenario'>creation fails with correct username and pasword consisting of letters</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.003</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0030</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command new user is selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure4_closure17.doCall(new_user_creation.story:63)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a valid username and password consisting of letters are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure4_closure18.doCall(new_user_creation.story:68)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then new user is not be registered to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure4_closure19.doCall(new_user_creation.story:71)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='primaryScenarioRow'>
                 <td title='Scenario'>creation fails with too short username and valid pasword</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.004</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0040</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command new user is selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure5_closure20.doCall(new_user_creation.story:78)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a too sort username and valid password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure5_closure21.doCall(new_user_creation.story:83)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then new user is not be registered to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure5_closure22.doCall(new_user_creation.story:86)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='secondaryScenarioRow'>
                 <td title='Scenario'>creation fails with already taken username and valid pasword</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.003</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0050</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command new user is selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure6_closure23.doCall(new_user_creation.story:93)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a already taken username and valid password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure6_closure24.doCall(new_user_creation.story:98)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then new user is not be registered to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: io for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure6_closure25.doCall(new_user_creation.story:101)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               
               <tr class='primaryScenarioRow'>
                 <td title='Scenario'>can not login with account that is not succesfully created</td>
-                <td title='Result' class='stepResultSuccess'>success</td>
-                <td title='Time (sec)'>0.004</td>
+                <td title='Result' class='stepResultFailed'>failure</td>
+                <td title='Time (sec)'>0.0040</td>
               </tr>
               
               <tr class='scenarioComponents'>
                 <td>given command new user is selected</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure7_closure26.doCall(new_user_creation.story:108)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>when a invalid username/password are entered</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.MissingPropertyException: No such property: app for class: new_user_creation</strong>
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+                  
+                  <br />new_user_creation$_run_closure7_closure27.doCall(new_user_creation.story:113)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+                  
+                  <br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+                  
+                  <br />org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+                  
+                  <br />
+                </td>
               </tr>
               
               
               <tr class='scenarioComponents'>
                 <td>then new credentials do not allow logging in to system</td>
-                <td class='stepResultSuccess'>success</td>
+                <td class='stepResultFailed'>failure</td>
                 <td />
+              </tr>
+              
+              <tr>
+                <td colspan='3' style='color:red; padding-left: 1cm;'>
+                  
+                  <strong>groovy.lang.GroovyRuntimeException: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)</strong>
+                  
+                  <br />groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+                  
+                  <br />org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+                  
+                  <br />new_user_creation$_run_closure7_closure28.doCall(new_user_creation.story:117)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                  
+                  <br />sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+                  
+                  <br />sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+                  
+                  <br />java.lang.reflect.Method.invoke(Method.java:597)
+                  
+                  <br />
+                </td>
               </tr>
               
               
@@ -468,10 +1338,10 @@
 <div id='StoriesListPlain' style='display:none;'>
   <h2>Stories Text</h2>
   
-  <div>10 scenarios executed successfully.</div>
-  <div><br/><br/>&nbsp;&nbsp;Story: logging_in<br/><br/>&nbsp;&nbsp;&nbsp;User can log in with valid username/password-combination<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario user can login with correct password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command login selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then user will be logged in to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario user can not login with incorrect password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command login selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and incorrect password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then user will not be logged in to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario nonexistent user can not login to <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command login selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a nonexistent username and some password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then user will not be logged in to system<br/><br/>&nbsp;&nbsp;Story: new_user_creation<br/><br/>&nbsp;&nbsp;&nbsp;A new user account can be created 
+  <div>10 scenarios executed, but status is failure! Total failures: 10</div>
+  <div><br/><br/>&nbsp;&nbsp;Story: logging_in<br/><br/>&nbsp;&nbsp;&nbsp;User can log in with valid username/password-combination<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario user can login with correct password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command login selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: logging_in]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then user will be logged in to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: logging_in]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario user can not login with incorrect password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command login selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and incorrect password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: logging_in]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then user will not be logged in to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: logging_in]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario nonexistent user can not login to <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command login selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a nonexistent username and some password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: logging_in]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then user will not be logged in to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: logging_in]</span><br/><br/>&nbsp;&nbsp;Story: new_user_creation<br/><br/>&nbsp;&nbsp;&nbsp;A new user account can be created 
               if a proper unused username 
-              and a proper password are given<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation succesfull with correct username and password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is registered to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario can login with succesfully generated account<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new credentials allow logging in to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with correct username and too short password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and too short password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with correct username and pasword consisting of letters<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password consisting of letters are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with too short username and valid pasword<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a too sort username and valid password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with already taken username and valid pasword<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a already taken username and valid password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario can not login with account that is not succesfully created<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a invalid username/password are entered<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new credentials do not allow logging in to system</div>
+              and a proper password are given<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation succesfull with correct username and password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: new_user_creation]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is registered to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: new_user_creation]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario can login with succesfully generated account<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: new_user_creation]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new credentials allow logging in to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: new_user_creation]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with correct username and too short password<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and too short password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: new_user_creation]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: new_user_creation]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with correct username and pasword consisting of letters<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a valid username and password consisting of letters are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: new_user_creation]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: new_user_creation]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with too short username and valid pasword<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a too sort username and valid password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: new_user_creation]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: new_user_creation]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario creation fails with already taken username and valid pasword<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a already taken username and valid password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: new_user_creation]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new user is not be registered to system&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: io for class: new_user_creation]</span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;scenario can not login with account that is not succesfully created<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given command new user is selected&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;when a invalid username/password are entered&nbsp;<span style='color:#FF8080;'>[FAILURE: No such property: app for class: new_user_creation]</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then new credentials do not allow logging in to system&nbsp;<span style='color:#FF8080;'>[FAILURE: Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)]</span></div>
 </div>
 
       </div>

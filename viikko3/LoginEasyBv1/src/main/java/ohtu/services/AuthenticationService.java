@@ -1,29 +1,16 @@
 package ohtu.services;
-
-import ohtu.data_access.FileUserDao;
 import ohtu.data_access.UserDao;
 import ohtu.domain.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
-import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class AuthenticationService {
 
     private UserDao userDao;
     
-    public AuthenticationService (){
-//        ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
-//        this.userDao = (UserDao) ctx.getBean("fileUserDao");
-        userDao = new FileUserDao("salanat.txt");
-        
-    }
-
     //@Autowired kommentoitu FileUserDaon käyttöönoton vuoksi
-//    public AuthenticationService(UserDao userDao) {
-//        this.userDao = userDao;
-//    }
+    public AuthenticationService(UserDao userDao) {
+        this.userDao = userDao;
+    }
 
     public boolean logIn(String username, String password) {
         for (User user : userDao.listAll()) {
@@ -32,7 +19,6 @@ public class AuthenticationService {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -72,7 +58,6 @@ public class AuthenticationService {
                     || password.matches(".*[A-Z].*")) {
                 passwordInvalid = false;
             }
-
         }
         if (!usernameInvalid && !passwordInvalid) {
             return false;

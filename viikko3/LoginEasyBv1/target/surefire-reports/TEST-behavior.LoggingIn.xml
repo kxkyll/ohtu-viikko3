@@ -1,5 +1,26 @@
-<testsuite tests='3' results='3' failures='0' disabled='0' errors='0' time='0.627' name='behavior.logging_in'>
-  <testcase classname='behavior.logging_in' name='user can login with correct password' time='0.054' />
-  <testcase classname='behavior.logging_in' name='user can not login with incorrect password' time='0.009' />
-  <testcase classname='behavior.logging_in' name='nonexistent user can not login to ' time='0.005' />
+<testsuite tests='3' results='0' failures='3' disabled='0' errors='0' time='13.452' name='behavior.logging_in'>
+  <testcase classname='behavior.logging_in' name='user can login with correct password' time='0.209'>
+    <failure message='Step "command login selected" -- Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao); Step "a valid username and password are entered" -- No such property: app for class: logging_in; Step "user will be logged in to system" -- No such property: io for class: logging_in'>Step "command login selected" -- Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao); Step "a valid username and password are entered" -- No such property: app for class: logging_in; Step "user will be logged in to system" -- No such property: io for class: logging_in
+
+    scenario user can login with correct password
+      given command login selected
+      when a valid username and password are entered
+      then user will be logged in to system</failure>
+  </testcase>
+  <testcase classname='behavior.logging_in' name='user can not login with incorrect password' time='0.005'>
+    <failure message='Step "command login selected" -- Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao); Step "a valid username and incorrect password are entered" -- No such property: app for class: logging_in; Step "user will not be logged in to system" -- No such property: io for class: logging_in'>Step "command login selected" -- Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao); Step "a valid username and incorrect password are entered" -- No such property: app for class: logging_in; Step "user will not be logged in to system" -- No such property: io for class: logging_in
+
+    scenario user can not login with incorrect password
+      given command login selected
+      when a valid username and incorrect password are entered
+      then user will not be logged in to system</failure>
+  </testcase>
+  <testcase classname='behavior.logging_in' name='nonexistent user can not login to ' time='0.003'>
+    <failure message='Step "command login selected" -- Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao); Step "a nonexistent username and some password are entered" -- No such property: app for class: logging_in; Step "user will not be logged in to system" -- No such property: io for class: logging_in'>Step "command login selected" -- Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao); Step "a nonexistent username and some password are entered" -- No such property: app for class: logging_in; Step "user will not be logged in to system" -- No such property: io for class: logging_in
+
+    scenario nonexistent user can not login to 
+      given command login selected
+      when a nonexistent username and some password are entered
+      then user will not be logged in to system</failure>
+  </testcase>
 </testsuite>

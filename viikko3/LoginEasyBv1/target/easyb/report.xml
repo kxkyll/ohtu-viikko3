@@ -1,61 +1,511 @@
-<easyb time='Sat Apr 06 15:43:45 EEST 2013' totalbehaviors='10' totalfailedbehaviors='0' totalpendingbehaviors='0' executionTime='827'>
-  <stories scenarios='10' failedscenarios='0' pendingscenarios='0' executionTime='827'>
-    <story name='logging_in' scenarios='3' failedscenarios='0' pendingscenarios='0' executionTime='627'>
+<easyb time='Sun Apr 07 10:13:11 EEST 2013' totalbehaviors='10' totalfailedbehaviors='10' totalpendingbehaviors='0' executionTime='13612'>
+  <stories scenarios='10' failedscenarios='10' pendingscenarios='0' executionTime='13612'>
+    <story name='logging_in' scenarios='3' failedscenarios='3' pendingscenarios='0' executionTime='13452'>
       <description name='User can log in with valid username/password-combination' />
-      <scenario name='user can login with correct password' result='success' executionTime='54'>
-        <given name='command login selected' result='success' />
-        <when name='a valid username and password are entered' result='success' />
-        <then name='user will be logged in to system' result='success' />
+      <scenario name='user can login with correct password' result='failure' executionTime='209'>
+        <given name='command login selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+logging_in$_run_closure1_closure4.doCall(logging_in.story:12)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a valid username and password are entered' result='failure'>
+          <failure message='No such property: app for class: logging_in'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+logging_in$_run_closure1_closure5.doCall(logging_in.story:18)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='user will be logged in to system' result='failure'>
+          <failure message='No such property: io for class: logging_in'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+logging_in$_run_closure1_closure6.doCall(logging_in.story:22)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='user can not login with incorrect password' result='success' executionTime='9'>
-        <given name='command login selected' result='success' />
-        <when name='a valid username and incorrect password are entered' result='success' />
-        <then name='user will not be logged in to system' result='success' />
+      <scenario name='user can not login with incorrect password' result='failure' executionTime='5'>
+        <given name='command login selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+logging_in$_run_closure2_closure7.doCall(logging_in.story:29)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a valid username and incorrect password are entered' result='failure'>
+          <failure message='No such property: app for class: logging_in'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+logging_in$_run_closure2_closure8.doCall(logging_in.story:34)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='user will not be logged in to system' result='failure'>
+          <failure message='No such property: io for class: logging_in'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+logging_in$_run_closure2_closure9.doCall(logging_in.story:37)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='nonexistent user can not login to ' result='success' executionTime='5'>
-        <given name='command login selected' result='success' />
-        <when name='a nonexistent username and some password are entered' result='success' />
-        <then name='user will not be logged in to system' result='success' />
+      <scenario name='nonexistent user can not login to ' result='failure' executionTime='3'>
+        <given name='command login selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+logging_in$_run_closure3_closure10.doCall(logging_in.story:45)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a nonexistent username and some password are entered' result='failure'>
+          <failure message='No such property: app for class: logging_in'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+logging_in$_run_closure3_closure11.doCall(logging_in.story:50)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='user will not be logged in to system' result='failure'>
+          <failure message='No such property: io for class: logging_in'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+logging_in$_run_closure3_closure12.doCall(logging_in.story:53)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
     </story>
-    <story name='new_user_creation' scenarios='7' failedscenarios='0' pendingscenarios='0' executionTime='200'>
+    <story name='new_user_creation' scenarios='7' failedscenarios='7' pendingscenarios='0' executionTime='160'>
       <description name='A new user account can be created 
               if a proper unused username 
               and a proper password are given' />
-      <scenario name='creation succesfull with correct username and password' result='success' executionTime='4'>
-        <given name='command new user is selected' result='success' />
-        <when name='a valid username and password are entered' result='success' />
-        <then name='new user is registered to system' result='success' />
+      <scenario name='creation succesfull with correct username and password' result='failure' executionTime='8'>
+        <given name='command new user is selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure1_closure8.doCall(new_user_creation.story:14)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a valid username and password are entered' result='failure'>
+          <failure message='No such property: app for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure1_closure9.doCall(new_user_creation.story:20)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='new user is registered to system' result='failure'>
+          <failure message='No such property: io for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure1_closure10.doCall(new_user_creation.story:24)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='can login with succesfully generated account' result='success' executionTime='4'>
-        <given name='command new user is selected' result='success' />
-        <when name='a valid username and password are entered' result='success' />
-        <then name='new credentials allow logging in to system' result='success' />
+      <scenario name='can login with succesfully generated account' result='failure' executionTime='2'>
+        <given name='command new user is selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure2_closure11.doCall(new_user_creation.story:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a valid username and password are entered' result='failure'>
+          <failure message='No such property: app for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure2_closure12.doCall(new_user_creation.story:37)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='new credentials allow logging in to system' result='failure'>
+          <failure message='No such property: io for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure2_closure13.doCall(new_user_creation.story:41)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='creation fails with correct username and too short password' result='success' executionTime='4'>
-        <given name='command new user is selected' result='success' />
-        <when name='a valid username and too short password are entered' result='success' />
-        <then name='new user is not be registered to system' result='success' />
+      <scenario name='creation fails with correct username and too short password' result='failure' executionTime='2'>
+        <given name='command new user is selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure3_closure14.doCall(new_user_creation.story:48)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a valid username and too short password are entered' result='failure'>
+          <failure message='No such property: app for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure3_closure15.doCall(new_user_creation.story:53)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='new user is not be registered to system' result='failure'>
+          <failure message='No such property: io for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure3_closure16.doCall(new_user_creation.story:56)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='creation fails with correct username and pasword consisting of letters' result='success' executionTime='3'>
-        <given name='command new user is selected' result='success' />
-        <when name='a valid username and password consisting of letters are entered' result='success' />
-        <then name='new user is not be registered to system' result='success' />
+      <scenario name='creation fails with correct username and pasword consisting of letters' result='failure' executionTime='3'>
+        <given name='command new user is selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure4_closure17.doCall(new_user_creation.story:63)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a valid username and password consisting of letters are entered' result='failure'>
+          <failure message='No such property: app for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure4_closure18.doCall(new_user_creation.story:68)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='new user is not be registered to system' result='failure'>
+          <failure message='No such property: io for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure4_closure19.doCall(new_user_creation.story:71)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='creation fails with too short username and valid pasword' result='success' executionTime='4'>
-        <given name='command new user is selected' result='success' />
-        <when name='a too sort username and valid password are entered' result='success' />
-        <then name='new user is not be registered to system' result='success' />
+      <scenario name='creation fails with too short username and valid pasword' result='failure' executionTime='4'>
+        <given name='command new user is selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure5_closure20.doCall(new_user_creation.story:78)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a too sort username and valid password are entered' result='failure'>
+          <failure message='No such property: app for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure5_closure21.doCall(new_user_creation.story:83)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='new user is not be registered to system' result='failure'>
+          <failure message='No such property: io for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure5_closure22.doCall(new_user_creation.story:86)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='creation fails with already taken username and valid pasword' result='success' executionTime='3'>
-        <given name='command new user is selected' result='success' />
-        <when name='a already taken username and valid password are entered' result='success' />
-        <then name='new user is not be registered to system' result='success' />
+      <scenario name='creation fails with already taken username and valid pasword' result='failure' executionTime='5'>
+        <given name='command new user is selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure6_closure23.doCall(new_user_creation.story:93)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a already taken username and valid password are entered' result='failure'>
+          <failure message='No such property: app for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure6_closure24.doCall(new_user_creation.story:98)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='new user is not be registered to system' result='failure'>
+          <failure message='No such property: io for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure6_closure25.doCall(new_user_creation.story:101)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
-      <scenario name='can not login with account that is not succesfully created' result='success' executionTime='4'>
-        <given name='command new user is selected' result='success' />
-        <when name='a invalid username/password are entered' result='success' />
-        <then name='new credentials do not allow logging in to system' result='success' />
+      <scenario name='can not login with account that is not succesfully created' result='failure' executionTime='4'>
+        <given name='command new user is selected' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure7_closure26.doCall(new_user_creation.story:108)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </given>
+        <when name='a invalid username/password are entered' result='failure'>
+          <failure message='No such property: app for class: new_user_creation'>
+            <stacktrace>org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:239)
+new_user_creation$_run_closure7_closure27.doCall(new_user_creation.story:113)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:273)
+...
+</stacktrace>
+          </failure>
+        </when>
+        <then name='new credentials do not allow logging in to system' result='failure'>
+          <failure message='Could not find matching constructor for: ohtu.services.AuthenticationService(ohtu.data_access.InMemoryUserDao)'>
+            <stacktrace>groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1397)
+org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:198)
+new_user_creation$_run_closure7_closure28.doCall(new_user_creation.story:117)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+java.lang.reflect.Method.invoke(Method.java:597)
+...
+</stacktrace>
+          </failure>
+        </then>
       </scenario>
     </story>
   </stories>
